@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @entry.description %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @entry.note %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= @entry.priority %>
+</p>
+
+<p>
+  <b>Due:</b>
+  <%= @entry.due %>
+</p>
+
+<p>
+  <b>Scheduled for:</b>
+  <%= @entry.scheduled_for %>
+</p>
+
+<p>
+  <b>Completed at:</b>
+  <%= @entry.completed_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>
